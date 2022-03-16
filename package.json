@@ -1,0 +1,43 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "flywire",
+  "title": "Flywire",
+  "description": "Flywire scripts for Raycasts",
+  "icon": "flywire.png",
+  "author": "Vicent Gozalbes",
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "generate-pan-copy",
+      "title": "Copy Indian PAN number",
+      "subtitle": "Random Indian PAN number",
+      "description": "Copies a random PAN number to the clipboard",
+      "mode": "no-view"
+    },
+    {
+      "name": "generate-pan-paste",
+      "title": "Paste Indian PAN number",
+      "subtitle": "Random Indian PAN number",
+      "description": "Pastes a random PAN number to the current selection of the frontmost application",
+      "mode": "no-view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.25.6"
+  },
+  "devDependencies": {
+    "@types/node": "~16.10.0",
+    "@types/react": "^17.0.28",
+    "@types/uuid": "^8.3.3",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "react-devtools": "^4.19.2",
+    "typescript": "^4.4.3"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop"
+  }
+}
